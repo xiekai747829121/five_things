@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/top_blue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#40C4FF"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Daily Weather"
+        android:id="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingTop="15sp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/button"
+        android:background="#40C4FF"
+        android:layout_alignTop="@+id/top_blue"
+        android:layout_alignRight="@+id/top_blue"
+        android:layout_alignEnd="@+id/top_blue" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/back"
+        android:layout_below="@+id/top_blue"
+        />
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/kitty"
+        android:background="@drawable/back2"
+        android:src="@drawable/weather"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignLeft="@+id/search_view"
+        android:layout_alignStart="@+id/search_view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="The following is the weather of recent eight days"
+        android:id="@+id/textView11"
+        android:textColor="#000000"
+        android:layout_below="@+id/search_view"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/July_20"
+        android:src="@drawable/rain_s_cloudy"
+        android:background="@drawable/back2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/July_21"
+        android:src="@drawable/sunny"
+        android:background="@drawable/back2"
+        android:layout_below="@+id/July_20"
+        android:layout_alignLeft="@+id/July_20"
+        android:layout_alignStart="@+id/July_20"
+        android:layout_marginTop="29dp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/July_22"
+        android:src="@drawable/partly_cloudy"
+        android:background="@drawable/back2"
+        android:layout_below="@+id/July_21"
+        android:layout_alignLeft="@+id/July_21"
+        android:layout_alignStart="@+id/July_21"
+        android:layout_marginTop="30dp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/July_23"
+        android:src="@drawable/partly_cloudy"
+        android:background="@drawable/back2"
+        android:layout_below="@+id/July_22"
+        android:layout_alignLeft="@+id/July_22"
+        android:layout_alignStart="@+id/July_22"
+        android:layout_marginTop="30dp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/July_24"
+        android:src="@drawable/partly_cloudy"
+        android:background="@drawable/back2"
+        android:layout_below="@+id/July_23"
+        android:layout_alignLeft="@+id/July_23"
+        android:layout_alignStart="@+id/July_23"
+        android:layout_marginTop="30dp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/July_25"
+        android:src="@drawable/sunny"
+        android:background="@drawable/back2"
+        android:layout_below="@+id/July_24"
+        android:layout_alignLeft="@+id/July_24"
+        android:layout_alignStart="@+id/July_24"
+        android:layout_marginTop="30dp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/July_26"
+        android:src="@drawable/partly_cloudy"
+        android:background="@drawable/back2"
+        android:layout_below="@+id/July_25"
+        android:layout_alignLeft="@+id/July_25"
+        android:layout_alignStart="@+id/July_25"
+        android:layout_marginTop="30dp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/July_27"
+        android:src="@drawable/rain_s_cloudy"
+        android:background="@drawable/back2"
+        android:layout_below="@+id/July_26"
+        android:layout_alignLeft="@+id/July_26"
+        android:layout_alignStart="@+id/July_26"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="28/31℃"
+        android:id="@+id/textView12"
+        android:layout_alignTop="@+id/July_20"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="20 Jul(WED)"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignEnd="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Rainy"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignRight="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="24/29℃"
+        android:id="@+id/textView15"
+        android:layout_alignTop="@+id/July_21"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignEnd="@+id/textView14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="21 Jul(THU)"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sunny"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView16"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="24/29℃"
+        android:id="@+id/textView18"
+        android:layout_alignTop="@+id/July_22"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="22  Jul(FRI)"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textView18"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cloudy"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/textView19"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="24/30℃"
+        android:id="@+id/textView21"
+        android:layout_alignTop="@+id/July_23"
+        android:layout_alignRight="@+id/textView22"
+        android:layout_alignEnd="@+id/textView22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="23 Jul(SAT)"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/textView21"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cloudy"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/textView22"
+        android:layout_alignRight="@+id/textView22"
+        android:layout_alignEnd="@+id/textView22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="24/30℃"
+        android:id="@+id/textView24"
+        android:layout_alignTop="@+id/July_24"
+        android:layout_alignRight="@+id/textView23"
+        android:layout_alignEnd="@+id/textView23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="24 Jul(SUN)"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView24"
+        android:layout_alignRight="@+id/textView24"
+        android:layout_alignEnd="@+id/textView24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cloudy"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/textView25"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="24/29℃"
+        android:id="@+id/textView27"
+        android:layout_alignTop="@+id/July_25"
+        android:layout_alignRight="@+id/textView26"
+        android:layout_alignEnd="@+id/textView26" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="25 Jul(MON)"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView27"
+        android:layout_alignRight="@+id/textView27"
+        android:layout_alignEnd="@+id/textView27" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sunny"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView28"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="24/28℃"
+        android:id="@+id/textView30"
+        android:layout_alignTop="@+id/July_26"
+        android:layout_alignRight="@+id/textView29"
+        android:layout_alignEnd="@+id/textView29" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="26 Jul(TUS)"
+        android:id="@+id/textView31"
+        android:layout_below="@+id/textView30"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cloudy"
+        android:id="@+id/textView32"
+        android:layout_below="@+id/textView31"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="24/28℃"
+        android:id="@+id/textView33"
+        android:layout_alignTop="@+id/July_27"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="27 Jul(WED)"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/textView33"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Rainy"
+        android:id="@+id/textView35"
+        android:layout_below="@+id/textView34"
+        android:layout_alignRight="@+id/textView25"
+        android:layout_alignEnd="@+id/textView25" />
+
+
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Back"
+        android:id="@+id/button5"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#40C4FF"
+        android:onClick="Back"
+        android:layout_below="@+id/July_27"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+</ScrollView>
